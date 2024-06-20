@@ -2,14 +2,20 @@
   "name": "snippet-guru",
   "displayName": "Snippet Guru",
   "description": "A VS Code extension for managing and creating code snippets efficiently",
-  "version": "0.0.1",
-  "publisher": "Bharath Bheemireddy",
+  "version": "0.0.3",
+  "publisher": "BharathBheemireddy",
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.90.0"
   },
+  "license": "BSD-3-Clause",
   "categories": [
     "Other"
   ],
+  "icon": "images/logo.webp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bharath529/snippet-guru.git"
+  },
   "activationEvents": [
     "onLanguage:javascript",
     "onLanguage:typescript",
