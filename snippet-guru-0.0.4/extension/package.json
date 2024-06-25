@@ -2,7 +2,7 @@
   "name": "snippet-guru",
   "displayName": "Snippet Guru",
   "description": "A VS Code extension for managing and creating code snippets efficiently",
-  "version": "0.0.5",
+  "version": "0.0.4",
   "publisher": "BharathBheemireddy",
   "engines": {
     "vscode": "^1.90.0"

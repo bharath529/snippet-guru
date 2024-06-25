@@ -1,0 +1,108 @@
+{
+    "Simple Console Log": {
+        "prefix": "clg",
+        "body": [
+            "console.log('${RELATIVE_FILEPATH}:${TM_LINE_NUMBER}', ${1:object});"
+        ],
+        "description": "Simple Console Log"
+    },
+    "Styled Console Log": {
+        "prefix": "clgstyled",
+        "body": [
+            "console.log('%c${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:object}', 'color: #007acc; font-weight: bold;', ${1:object});"
+        ],
+        "description": "Styled Console Log"
+    },
+    "Console Log with Function Name": {
+        "prefix": "clgfn",
+        "body": [
+            "console.log('%c${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${TM_CURRENT_FUNCTION} ${1:object}', 'color: #007acc;', ${1:object});"
+        ],
+        "description": "Console Log with Function Name"
+    },
+    "Error Console Log": {
+        "prefix": "clgerr",
+        "body": [
+            "console.error('${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:error}', ${1:error});"
+        ],
+        "description": "Error Console Log"
+    },
+    "Warn Console Log": {
+        "prefix": "clgwarn",
+        "body": [
+            "console.warn('${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:warning}', ${1:warning});"
+        ],
+        "description": "Warn Console Log"
+    },
+    "Group Console Log": {
+        "prefix": "clggroup",
+        "body": [
+            "console.group('${1:GroupName}');",
+            "console.log('${RELATIVE_FILEPATH}:${TM_LINE_NUMBER}', ${2:object});",
+            "console.groupEnd();"
+        ],
+        "description": "Group Console Log"
+    },
+    "Group Collapsed Console Log": {
+        "prefix": "clggroupc",
+        "body": [
+            "console.groupCollapsed('${1:GroupName}');",
+            "console.log('${RELATIVE_FILEPATH}:${TM_LINE_NUMBER}', ${2:object});",
+            "console.groupEnd();"
+        ],
+        "description": "Group Collapsed Console Log"
+    },
+    "Table Console Log": {
+        "prefix": "clgtable",
+        "body": [
+            "console.table(${1:object});"
+        ],
+        "description": "Table Console Log"
+    },
+    "Debugging Console Log": {
+        "prefix": "clgdebug",
+        "body": [
+            "console.debug('${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} ${1:debugInfo}', ${1:debugInfo});"
+        ],
+        "description": "Debugging Console Log"
+    },
+    "Console Log JSON Stringify": {
+        "prefix": "clgjson",
+        "body": [
+            "console.log('${RELATIVE_FILEPATH}:${TM_LINE_NUMBER}', JSON.stringify(${1:object}, null, 2));"
+        ],
+        "description": "Console Log JSON Stringify"
+    },
+    "Console Log Component Props": {
+        "prefix": "clgprops",
+        "body": [
+            "console.log('Component ${1:ComponentName} Props:', this.props);"
+        ],
+        "description": "Console Log Component Props"
+    },
+    "Console Log Component State": {
+        "prefix": "clgstate",
+        "body": [
+            "console.log('Component ${1:ComponentName} State:', ${stateName});"
+        ],
+        "description": "Console Log Component State"
+    },
+    "React useEffect Debug Log": {
+        "prefix": "clgue",
+        "body": [
+            "React.useEffect(() => {",
+            "    console.log('Effect in ${1:ComponentName} at ${RELATIVE_FILEPATH}:${TM_LINE_NUMBER}');",
+            "    ${2}",
+            "}, [${3}]);"
+        ],
+        "description": "React useEffect Debug Log"
+    },
+    "React useState Debug Log": {
+        "prefix": "clgus",
+        "body": [
+            "const [${1:state}, set${2:State}] = React.useState(${3:initialState});",
+            "console.log('useState in ${4:ComponentName} at ${RELATIVE_FILEPATH}:${TM_LINE_NUMBER} - State:', ${1:state});"
+        ],
+        "description": "React useState Debug Log"
+    }
+}

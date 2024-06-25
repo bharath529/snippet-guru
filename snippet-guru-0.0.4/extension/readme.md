@@ -2,7 +2,7 @@
 
 **Snippet Guru** is a VS Code extension designed to streamline the process of inserting and managing console logs and other useful snippets for JavaScript, TypeScript, React, React Native, and Gatsby developers.
 
-![Snippet Guru Demo](extension/images/demo.png)
+![Snippet Guru Demo](https://github.com/bharath529/snippet-guru/raw/HEAD/images/demo.png)
 
 ## Features
 
